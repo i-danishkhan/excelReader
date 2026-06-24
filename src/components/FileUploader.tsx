@@ -51,7 +51,7 @@ export function FileUploader({ onFile, loading }: Props) {
         </div>
         <h3 className="text-lg font-semibold">Drop your Excel file here</h3>
         <p className="mt-1 text-sm text-muted-foreground">
-          Supports .xlsx and .xls — processed entirely in your browser
+          Supports .xlsx and .xls files only
         </p>
         <input
           ref={inputRef}

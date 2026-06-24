@@ -89,9 +89,9 @@ function Index() {
               <FileSpreadsheet className="h-5 w-5" />
             </div>
             <div>
-              <h1 className="text-lg font-semibold leading-tight">Excel Column Explorer</h1>
+              <h1 className="text-lg font-semibold leading-tight">Excel Reader</h1>
               <p className="text-xs text-muted-foreground">
-                Upload, search, and analyze — 100% client-side
+                Upload, search, and analyze
               </p>
             </div>
           </div>
@@ -174,7 +174,7 @@ function Index() {
                 <h3 className="mb-3 text-sm font-semibold uppercase tracking-wider text-muted-foreground">
                   Columns
                 </h3>
-                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 items-start">
                   {sheet.headers.map((h, i) => (
                     <ColumnCard key={i} header={h} values={columnValues[i]} />
                   ))}
